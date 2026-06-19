@@ -1,0 +1,2484 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/rc/ontologies/2026/3/untitled-ontology-18"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/rc/ontologies/2026/3/untitled-ontology-18">
+    <Prefix name="" IRI="http://www.semanticweb.org/ai-platform-ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Service"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AICapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AIResearchLab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APIAccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutoregressiveModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudProvider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CodeInterpreter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffusionModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmbeddingModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EncoderOnlyModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FineTunedModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeTier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPUCluster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GenerativeAIPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageGeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractionLog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Java"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JavaScript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LargeLanguageModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultimodalPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalLanguageProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaidService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PremiumTier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PromptEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Python"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealTimeWebIndex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareDeveloper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubscriptionTier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupervisedLearningModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextOnlyPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainingDataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisionTransformer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebInterfaceAccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebSearchIntegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#schema:Dataset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:featureList"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:operatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:provider"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accessesRealTimeData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executesLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesLog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAccessProvidedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAccessedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAuthorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBaseModelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFineTunedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLogGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOperatingSystemOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPoweredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProvidedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRestrictedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSpecializationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTargetedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTechnicallyAccessedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTrainedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedForTrainingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUtilizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWrittenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#powersVisuals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#processesInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesAccess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresTechnicalAccess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#restrictsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#specializesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#targetsAudience"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#utilizesModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writesCodeIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:contentRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:currency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:datasetSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:mainEntityOfPage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:parameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:programmingLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasContextWindow"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMemoryCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMonthlyTokenLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasResolutionLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isBetaFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isScrapedFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#refreshRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AWSCloud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AimenDev"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BismaDev"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClinicalGPT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeepLearning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeepfakeDetector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GPT4o"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HuggingFace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JavaScript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NLPCapability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenAI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReactFramework"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UmmamahDev"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisionTransformer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#premiuim"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#GenerativeAIPlatform"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ConversationalAIPlatform"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#utilizesModel"/>
+                <Class IRI="#LargeLanguageModel"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PaidService"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SubscriptionTier"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#restrictsTo"/>
+                <Class IRI="#ConversationalAIPlatform"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProjectTeam"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#AimenDev"/>
+            <NamedIndividual IRI="#BismaDev"/>
+            <NamedIndividual IRI="#UmmamahDev"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SupervisedLearningModel"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#LargeLanguageModel"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isTrainedOn"/>
+                <Class IRI="#TrainingDataset"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AIResearchLab"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APIAccess"/>
+        <Class abbreviatedIRI="schema:Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutoregressiveModel"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudProvider"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeInterpreter"/>
+        <Class IRI="#AICapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversationalAIPlatform"/>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffusionModel"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmbeddingModel"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EncoderOnlyModel"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FineTunedModel"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeTier"/>
+        <Class IRI="#SubscriptionTier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPUCluster"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GenerativeAIPlatform"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageGeneration"/>
+        <Class IRI="#AICapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractionLog"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Java"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JavaScript"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LargeLanguageModel"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultimodalPlatform"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalLanguageProcessing"/>
+        <Class IRI="#AICapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaidService"/>
+        <Class IRI="#SubscriptionTier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PremiumTier"/>
+        <Class IRI="#SubscriptionTier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectTeam"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PromptEngineer"/>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Python"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealTimeWebIndex"/>
+        <Class IRI="#schema:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareDeveloper"/>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubscriptionTier"/>
+        <Class abbreviatedIRI="schema:Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupervisedLearningModel"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextOnlyPlatform"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainingDataset"/>
+        <Class IRI="#schema:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisionTransformer"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebInterfaceAccess"/>
+        <Class abbreviatedIRI="schema:Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebSearchIntegration"/>
+        <Class IRI="#AICapability"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AICapability"/>
+        <Class IRI="#WebSearchIntegration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AutoregressiveModel"/>
+        <Class IRI="#EncoderOnlyModel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CodeInterpreter"/>
+        <Class IRI="#ImageGeneration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CodeInterpreter"/>
+        <Class IRI="#NaturalLanguageProcessing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CodeInterpreter"/>
+        <Class IRI="#WebSearchIntegration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiffusionModel"/>
+        <Class IRI="#EmbeddingModel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiffusionModel"/>
+        <Class IRI="#FineTunedModel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiffusionModel"/>
+        <Class IRI="#VisionTransformer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EmbeddingModel"/>
+        <Class IRI="#FineTunedModel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EmbeddingModel"/>
+        <Class IRI="#VisionTransformer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EncoderOnlyModel"/>
+        <Class IRI="#GPUCluster"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EncoderOnlyModel"/>
+        <Class IRI="#WebInterfaceAccess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FineTunedModel"/>
+        <Class IRI="#VisionTransformer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FreeTier"/>
+        <Class IRI="#PremiumTier"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ImageGeneration"/>
+        <Class IRI="#NaturalLanguageProcessing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Java"/>
+        <Class IRI="#JavaScript"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Java"/>
+        <Class IRI="#Python"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#JavaScript"/>
+        <Class IRI="#Python"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MultimodalPlatform"/>
+        <Class IRI="#TextOnlyPlatform"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PromptEngineer"/>
+        <Class IRI="#SoftwareDeveloper"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PromptEngineer"/>
+        <Class IRI="#Student"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RealTimeWebIndex"/>
+        <Class IRI="#TrainingDataset"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SoftwareDeveloper"/>
+        <Class IRI="#Student"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SoftwareDeveloper"/>
+        <Class IRI="#WebInterfaceAccess"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#SoftwareDeveloper"/>
+        <NamedIndividual IRI="#AimenDev"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftwareDeveloper"/>
+        <NamedIndividual IRI="#BismaDev"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConversationalAIPlatform"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FineTunedModel"/>
+        <NamedIndividual IRI="#ClinicalGPT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrainingDataset"/>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AICapability"/>
+        <NamedIndividual IRI="#DeepLearning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FineTunedModel"/>
+        <NamedIndividual IRI="#DeepfakeDetector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AutoregressiveModel"/>
+        <NamedIndividual IRI="#GPT4o"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LargeLanguageModel"/>
+        <NamedIndividual IRI="#GPT4o"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <NamedIndividual IRI="#HuggingFace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#schema:ComputerLanguage"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AICapability"/>
+        <NamedIndividual IRI="#NLPCapability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AICapability"/>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIResearchLab"/>
+        <NamedIndividual IRI="#OpenAI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#schema:ComputerLanguage"/>
+        <NamedIndividual IRI="#ReactFramework"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftwareDeveloper"/>
+        <NamedIndividual IRI="#UmmamahDev"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+        <NamedIndividual IRI="#VisionTransformer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SubscriptionTier"/>
+        <NamedIndividual IRI="#premiuim"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesAccess"/>
+        <NamedIndividual IRI="#AWSCloud"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writesCodeIn"/>
+        <NamedIndividual IRI="#AimenDev"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializesIn"/>
+        <NamedIndividual IRI="#BismaDev"/>
+        <NamedIndividual IRI="#NLPCapability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:featureList"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+        <NamedIndividual IRI="#NLPCapability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#utilizesModel"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+        <NamedIndividual IRI="#GPT4o"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFineTunedFrom"/>
+        <NamedIndividual IRI="#ClinicalGPT"/>
+        <NamedIndividual IRI="#GPT4o"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:author"/>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+        <NamedIndividual IRI="#OpenAI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTrainedOn"/>
+        <NamedIndividual IRI="#DeepLearning"/>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializesIn"/>
+        <NamedIndividual IRI="#DeepLearning"/>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#utilizesModel"/>
+        <NamedIndividual IRI="#DeepfakeDetector"/>
+        <NamedIndividual IRI="#VisionTransformer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTrainedOn"/>
+        <NamedIndividual IRI="#GPT4o"/>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:provider"/>
+        <NamedIndividual IRI="#HuggingFace"/>
+        <NamedIndividual IRI="#ClinicalGPT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#executesLanguage"/>
+        <NamedIndividual IRI="#JavaScript"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializesIn"/>
+        <NamedIndividual IRI="#JavaScript"/>
+        <NamedIndividual IRI="#ReactFramework"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writesCodeIn"/>
+        <NamedIndividual IRI="#JavaScript"/>
+        <NamedIndividual IRI="#AimenDev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializesIn"/>
+        <NamedIndividual IRI="#NLPCapability"/>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:featureList"/>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializesIn"/>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+        <NamedIndividual IRI="#DeepLearning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:provider"/>
+        <NamedIndividual IRI="#OpenAI"/>
+        <NamedIndividual IRI="#GPT4o"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesAccess"/>
+        <NamedIndividual IRI="#OpenAI"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializesIn"/>
+        <NamedIndividual IRI="#ReactFramework"/>
+        <NamedIndividual IRI="#UmmamahDev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesAccess"/>
+        <NamedIndividual IRI="#UmmamahDev"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#powersVisuals"/>
+        <NamedIndividual IRI="#VisionTransformer"/>
+        <NamedIndividual IRI="#DeepfakeDetector"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#AWSCloud"/>
+        <Literal>Amazon Web Services</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:email"/>
+        <NamedIndividual IRI="#AimenDev"/>
+        <Literal>ummamah.aiman@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:location"/>
+        <NamedIndividual IRI="#AimenDev"/>
+        <Literal>Workspace</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:email"/>
+        <NamedIndividual IRI="#BismaDev"/>
+        <Literal>bisma@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#BismaDev"/>
+        <Literal>Bisma Rizwan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+        <Literal>ChatGPT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+        <NamedIndividual IRI="#ChatGPTInst"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+        <NamedIndividual IRI="#ClinicalGPT"/>
+        <Literal>2024-06-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+        <NamedIndividual IRI="#ClinicalGPT"/>
+        <Literal>v1.2-med</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBetaFeature"/>
+        <NamedIndividual IRI="#ClinicalGPT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+        <Literal>2024-05-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+        <Literal>GPT-4o</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContextWindow"/>
+        <NamedIndividual IRI="#CommonCrawlData"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">128000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:currency"/>
+        <NamedIndividual IRI="#DeepLearning"/>
+        <Literal>dollar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#DeepLearning"/>
+        <Literal>Deep Learning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBetaFeature"/>
+        <NamedIndividual IRI="#DeepLearning"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#DeepfakeDetector"/>
+        <Literal>Artifact Analysis System</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#GPT4o"/>
+        <Literal>GPT-4 Omni</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+        <NamedIndividual IRI="#GPT4o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBetaFeature"/>
+        <NamedIndividual IRI="#GPT4o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#HuggingFace"/>
+        <Literal>Hugging Face</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+        <NamedIndividual IRI="#JavaScript"/>
+        <Literal>ES2023</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBetaFeature"/>
+        <NamedIndividual IRI="#JavaScript"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#refreshRate"/>
+        <NamedIndividual IRI="#JavaScript"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#NLPCapability"/>
+        <Literal>Natural Language Processing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBetaFeature"/>
+        <NamedIndividual IRI="#NLPCapability"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+        <Literal>Natural Language Processing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBetaFeature"/>
+        <NamedIndividual IRI="#NaturalLanguageProcessing"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:location"/>
+        <NamedIndividual IRI="#OpenAI"/>
+        <Literal>San Francisco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#OpenAI"/>
+        <Literal>OpenAI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#ReactFramework"/>
+        <Literal>React JS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#UmmamahDev"/>
+        <Literal>Ummamah Aiman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:programmingLanguage"/>
+        <NamedIndividual IRI="#UmmamahDev"/>
+        <Literal>Frontend Development</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+        <NamedIndividual IRI="#VisionTransformer"/>
+        <Literal>2.1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#refreshRate"/>
+        <NamedIndividual IRI="#VisionTransformer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:currency"/>
+        <NamedIndividual IRI="#premiuim"/>
+        <Literal>dollar</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="schema:author"/>
+        <ObjectProperty IRI="#isAuthorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="schema:featureList"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="schema:operatingSystem"/>
+        <ObjectProperty IRI="#isOperatingSystemOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="schema:provider"/>
+        <ObjectProperty IRI="#isProvidedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#accessesRealTimeData"/>
+        <ObjectProperty IRI="#isAccessedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#executesLanguage"/>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#generatesLog"/>
+        <ObjectProperty IRI="#isLogGeneratedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAccessProvidedBy"/>
+        <ObjectProperty IRI="#providesAccess"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBaseModelOf"/>
+        <ObjectProperty IRI="#isFineTunedFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPoweredBy"/>
+        <ObjectProperty IRI="#powersVisuals"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isProcessedBy"/>
+        <ObjectProperty IRI="#processesInput"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRestrictedBy"/>
+        <ObjectProperty IRI="#restrictsTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSpecializationOf"/>
+        <ObjectProperty IRI="#specializesIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTargetedBy"/>
+        <ObjectProperty IRI="#targetsAudience"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTechnicallyAccessedBy"/>
+        <ObjectProperty IRI="#requiresTechnicalAccess"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTrainedOn"/>
+        <ObjectProperty IRI="#isUsedForTrainingOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isUtilizedBy"/>
+        <ObjectProperty IRI="#utilizesModel"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isWrittenBy"/>
+        <ObjectProperty IRI="#writesCodeIn"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isFineTunedFrom"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isTrainedOn"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:author"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:featureList"/>
+        <Class IRI="#SubscriptionTier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:operatingSystem"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:provider"/>
+        <Class IRI="#Infrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accessesRealTimeData"/>
+        <Class IRI="#WebSearchIntegration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executesLanguage"/>
+        <Class IRI="#CodeInterpreter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesLog"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAccessProvidedBy"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAccessedBy"/>
+        <Class IRI="#RealTimeWebIndex"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <Class IRI="#AIResearchLab"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBaseModelOf"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFeatureOf"/>
+        <Class IRI="#AICapability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFineTunedFrom"/>
+        <Class IRI="#FineTunedModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLogGeneratedBy"/>
+        <Class IRI="#InteractionLog"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOperatingSystemOf"/>
+        <Class IRI="#GPUCluster"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPoweredBy"/>
+        <Class IRI="#ImageGeneration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProcessedBy"/>
+        <Class IRI="#NaturalLanguageProcessing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProvidedBy"/>
+        <Class IRI="#CloudProvider"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRestrictedBy"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSpecializationOf"/>
+        <Class IRI="#AICapability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTargetedBy"/>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTechnicallyAccessedBy"/>
+        <Class IRI="#APIAccess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTrainedOn"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUsedForTrainingOf"/>
+        <Class IRI="#TrainingDataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUtilizedBy"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWrittenBy"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#powersVisuals"/>
+        <ObjectUnionOf>
+            <Class IRI="#DiffusionModel"/>
+            <Class IRI="#VisionTransformer"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#processesInput"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#providesAccess"/>
+        <Class IRI="#WebInterfaceAccess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresTechnicalAccess"/>
+        <Class IRI="#SoftwareDeveloper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#restrictsTo"/>
+        <Class IRI="#PremiumTier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#specializesIn"/>
+        <Class IRI="#PromptEngineer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#targetsAudience"/>
+        <Class IRI="#SubscriptionTier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#utilizesModel"/>
+        <Class IRI="#AICapability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writesCodeIn"/>
+        <Class IRI="#SoftwareDeveloper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:author"/>
+        <Class IRI="#AIResearchLab"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:featureList"/>
+        <Class IRI="#AICapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:operatingSystem"/>
+        <Class IRI="#GPUCluster"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:provider"/>
+        <Class IRI="#CloudProvider"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accessesRealTimeData"/>
+        <Class IRI="#RealTimeWebIndex"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executesLanguage"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesLog"/>
+        <Class IRI="#InteractionLog"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAccessProvidedBy"/>
+        <Class IRI="#WebInterfaceAccess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAccessedBy"/>
+        <Class IRI="#WebSearchIntegration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBaseModelOf"/>
+        <Class IRI="#FineTunedModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <Class IRI="#CodeInterpreter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFeatureOf"/>
+        <Class IRI="#SubscriptionTier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFineTunedFrom"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLogGeneratedBy"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOperatingSystemOf"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPoweredBy"/>
+        <Class IRI="#DiffusionModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProcessedBy"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProvidedBy"/>
+        <Class IRI="#Infrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRestrictedBy"/>
+        <Class IRI="#PremiumTier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSpecializationOf"/>
+        <Class IRI="#PromptEngineer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTargetedBy"/>
+        <Class IRI="#SubscriptionTier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTechnicallyAccessedBy"/>
+        <Class IRI="#SoftwareDeveloper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTrainedOn"/>
+        <Class IRI="#TrainingDataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUsedForTrainingOf"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUtilizedBy"/>
+        <Class IRI="#AICapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWrittenBy"/>
+        <Class IRI="#SoftwareDeveloper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#powersVisuals"/>
+        <Class IRI="#ImageGeneration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#processesInput"/>
+        <Class IRI="#NaturalLanguageProcessing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#providesAccess"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresTechnicalAccess"/>
+        <Class IRI="#APIAccess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#restrictsTo"/>
+        <Class IRI="#MultimodalPlatform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#specializesIn"/>
+        <Class IRI="#AICapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#targetsAudience"/>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#utilizesModel"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writesCodeIn"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:contentRating"/>
+        <Class IRI="#InteractionLog"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:currency"/>
+        <Class IRI="#SubscriptionTier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:datasetSize"/>
+        <Class IRI="#schema:Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+        <Class IRI="#FineTunedModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:email"/>
+        <Class IRI="#AIResearchLab"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:location"/>
+        <Class IRI="#AIResearchLab"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:mainEntityOfPage"/>
+        <Class IRI="#WebInterfaceAccess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:parameter"/>
+        <Class IRI="#LargeLanguageModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:price"/>
+        <Class IRI="#SubscriptionTier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:programmingLanguage"/>
+        <Class IRI="#schema:ComputerLanguage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+        <Class IRI="#ConversationalAIPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasContextWindow"/>
+        <Class IRI="#AutoregressiveModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMemoryCapacity"/>
+        <Class IRI="#GPUCluster"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMonthlyTokenLimit"/>
+        <Class IRI="#FreeTier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasResolutionLimit"/>
+        <Class IRI="#ImageGeneration"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isBetaFeature"/>
+        <Class IRI="#AICapability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isScrapedFrom"/>
+        <Class IRI="#TrainingDataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#refreshRate"/>
+        <Class IRI="#RealTimeWebIndex"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:contentRating"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:currency"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:datasetSize"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:mainEntityOfPage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:parameter"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:programmingLanguage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:softwareVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasContextWindow"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMemoryCapacity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMonthlyTokenLimit"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasResolutionLimit"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isBetaFeature"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isScrapedFrom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#refreshRate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Audience</AbbreviatedIRI>
+        <Literal>A group of users targeted by an AI platform or subscription service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Audience</AbbreviatedIRI>
+        <Literal>Audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:CreativeWork</AbbreviatedIRI>
+        <Literal>A created artifact such as a model, dataset, or log produced within the AI platform context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:CreativeWork</AbbreviatedIRI>
+        <Literal>Creative Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Organization</AbbreviatedIRI>
+        <Literal>An organization involved in AI research or development, such as OpenAI or Hugging Face.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Organization</AbbreviatedIRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Service</AbbreviatedIRI>
+        <Literal>A service provided by an AI platform, including API access, web interface access, and subscription tiers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Service</AbbreviatedIRI>
+        <Literal>Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:SoftwareApplication</AbbreviatedIRI>
+        <Literal>A software application that delivers AI capabilities to end users, such as ChatGPT or other conversational AI platforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:SoftwareApplication</AbbreviatedIRI>
+        <Literal>Software Application</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:author</AbbreviatedIRI>
+        <Literal>Relates a creative work such as a dataset to the organization that authored it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:author</AbbreviatedIRI>
+        <Literal>author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:contentRating</AbbreviatedIRI>
+        <Literal>A rating assigned to an interaction log based on its content type or safety level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:contentRating</AbbreviatedIRI>
+        <Literal>content Reading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:currency</AbbreviatedIRI>
+        <Literal>The currency used for pricing a subscription tier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:currency</AbbreviatedIRI>
+        <Literal>Currency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:datasetSize</AbbreviatedIRI>
+        <Literal>The size of a dataset used for training or evaluation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:datasetSize</AbbreviatedIRI>
+        <Literal>dataset Size</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:datePublished</AbbreviatedIRI>
+        <Literal>Relates a subscription tier to the intended audience it is designed for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:datePublished</AbbreviatedIRI>
+        <Literal>date Published</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:email</AbbreviatedIRI>
+        <Literal>The email address associated with an AI research lab or developer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:email</AbbreviatedIRI>
+        <Literal>email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:featureList</AbbreviatedIRI>
+        <Literal>Relates a subscription tier to the AI capabilities it offers as features.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:featureList</AbbreviatedIRI>
+        <Literal>feature List</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:location</AbbreviatedIRI>
+        <Literal>The geographic location of an AI research lab or organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:location</AbbreviatedIRI>
+        <Literal>location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:mainEntityOfPage</AbbreviatedIRI>
+        <Literal>The primary web page URL associated with a web interface access service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:mainEntityOfPage</AbbreviatedIRI>
+        <Literal>main Entity Of Page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:name</AbbreviatedIRI>
+        <Literal>The human-readable name of a conversational AI platform or ontology entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:name</AbbreviatedIRI>
+        <Literal>name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:operatingSystem</AbbreviatedIRI>
+        <Literal>Relates a conversational AI platform to the GPU cluster infrastructure it runs on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:operatingSystem</AbbreviatedIRI>
+        <Literal>operating System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:parameter</AbbreviatedIRI>
+        <Literal>A configuration parameter associated with a large language model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:parameter</AbbreviatedIRI>
+        <Literal>parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:price</AbbreviatedIRI>
+        <Literal>The cost associated with a subscription tier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:price</AbbreviatedIRI>
+        <Literal>price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:programmingLanguage</AbbreviatedIRI>
+        <Literal>The programming language associated with a computer language or developer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:programmingLanguage</AbbreviatedIRI>
+        <Literal>programming Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:provider</AbbreviatedIRI>
+        <Literal>Relates infrastructure to the cloud provider that supplies it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:provider</AbbreviatedIRI>
+        <Literal>provider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:softwareVersion</AbbreviatedIRI>
+        <Literal>The version number of a conversational AI platform or software application.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:softwareVersion</AbbreviatedIRI>
+        <Literal>software Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AICapability</IRI>
+        <Literal>A functional capability provided by an AI system, such as NLP, image generation, or code interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AICapability</IRI>
+        <Literal>AI Capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AIResearchLab</IRI>
+        <Literal>An organization dedicated to conducting research and developing artificial intelligence technologies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AIResearchLab</IRI>
+        <Literal>AI Research Lab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#APIAccess</IRI>
+        <Literal>A service that allows developers to programmatically interact with an AI platform via an application programming interface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#APIAccess</IRI>
+        <Literal>API Access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AutoregressiveModel</IRI>
+        <Literal>A language model that generates text by predicting one token at a time based on previous tokens.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AutoregressiveModel</IRI>
+        <Literal>Autoregressive Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CloudProvider</IRI>
+        <Literal>An infrastructure provider that delivers cloud computing resources to support AI platforms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CloudProvider</IRI>
+        <Literal>Cloud Provider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CodeInterpreter</IRI>
+        <Literal>An AI capability that can read, write, and execute programming code.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CodeInterpreter</IRI>
+        <Literal>Code Interpreter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConversationalAIPlatform</IRI>
+        <Literal>A software platform that enables natural language conversations between humans and AI systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConversationalAIPlatform</IRI>
+        <Literal>Conversational AI Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DiffusionModel</IRI>
+        <Literal>A generative AI model that creates images by learning to reverse a noise process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DiffusionModel</IRI>
+        <Literal>Diffusion Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmbeddingModel</IRI>
+        <Literal>A model that converts text or other data into numerical vector representations for semantic comparison</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EmbeddingModel</IRI>
+        <Literal>Embedding Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EncoderOnlyModel</IRI>
+        <Literal>A transformer model that only uses an encoder, typically used for classification and embedding tasks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EncoderOnlyModel</IRI>
+        <Literal>Encoder Only Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FineTunedModel</IRI>
+        <Literal>A pre-trained AI model that has been further trained on domain-specific data for a specialized task.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FineTunedModel</IRI>
+        <Literal>Fine Tuned Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FreeTier</IRI>
+        <Literal>A no-cost subscription level with limited access to AI platform features and usage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FreeTier</IRI>
+        <Literal>Free Tier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GPUCluster</IRI>
+        <Literal>A group of graphics processing units used to train and run AI models at scale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GPUCluster</IRI>
+        <Literal>GPU Cluster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageGeneration</IRI>
+        <Literal>An AI capability that produces visual content from text prompts or other inputs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageGeneration</IRI>
+        <Literal>Image Generation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Infrastructure</IRI>
+        <Literal>The physical or cloud-based computing resources that support AI platform operations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Infrastructure</IRI>
+        <Literal>Infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InteractionLog</IRI>
+        <Literal>A recorded log of user interactions with a conversational AI platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InteractionLog</IRI>
+        <Literal>Interaction Log</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Java</IRI>
+        <Literal>A general-purpose programming language commonly used in enterprise and backend software development.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Java</IRI>
+        <Literal>Java</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#JavaScript</IRI>
+        <Literal>A programming language primarily used for web development and frontend interfaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JavaScript</IRI>
+        <Literal>JavaScript</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LargeLanguageModel</IRI>
+        <Literal>A large-scale neural network trained on text data to understand and generate human language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LargeLanguageModel</IRI>
+        <Literal>Large Language Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MultimodalPlatform</IRI>
+        <Literal>A conversational AI platform that handles multiple input types including text, images, and audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MultimodalPlatform</IRI>
+        <Literal>Multimodal Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NaturalLanguageProcessing</IRI>
+        <Literal>An AI capability enabling machines to understand, interpret, and generate human language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaturalLanguageProcessing</IRI>
+        <Literal>Natural Language Processing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PremiumTier</IRI>
+        <Literal>A paid subscription level that provides enhanced access to AI platform features and higher usage limits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PremiumTier</IRI>
+        <Literal>Premium Tier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PromptEngineer</IRI>
+        <Literal>A user who specializes in designing effective prompts to guide AI model outputs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PromptEngineer</IRI>
+        <Literal>Prompt Engineer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Python</IRI>
+        <Literal>A high-level programming language widely used in AI and machine learning development</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Python</IRI>
+        <Literal>Python</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RealTimeWebIndex</IRI>
+        <Literal>A continuously updated index of web content used by AI platforms for live search capabilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealTimeWebIndex</IRI>
+        <Literal>Real Time Web Index</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SoftwareDeveloper</IRI>
+        <Literal>A user who builds applications using AI platform APIs and tools.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SoftwareDeveloper</IRI>
+        <Literal>Software Developer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Student</IRI>
+        <Literal>A learner who uses AI platforms for educational purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Student</IRI>
+        <Literal>Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SubscriptionTier</IRI>
+        <Literal>A level of access to an AI platform service defined by pricing and feature availability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SubscriptionTier</IRI>
+        <Literal>Subscription Tier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TextOnlyPlatform</IRI>
+        <Literal>A conversational AI platform that processes and outputs text exclusively, without multimodal support.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TextOnlyPlatform</IRI>
+        <Literal>Text Only Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrainingDataset</IRI>
+        <Literal>A dataset used to train an AI or machine learning model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrainingDataset</IRI>
+        <Literal>Training Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisionTransformer</IRI>
+        <Literal>A transformer-based model architecture designed to process and understand visual data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VisionTransformer</IRI>
+        <Literal>Vision Transformer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WebInterfaceAccess</IRI>
+        <Literal>A service that allows users to interact with an AI platform through a web browser.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WebInterfaceAccess</IRI>
+        <Literal>Web Interface Access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WebSearchIntegration</IRI>
+        <Literal>A capability that allows an AI platform to access and retrieve real-time information from the web.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WebSearchIntegration</IRI>
+        <Literal>Web Search Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accessesRealTimeData</IRI>
+        <Literal>Relates a web search integration capability to the real-time web index it queries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#accessesRealTimeData</IRI>
+        <Literal>access Real Time Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#executesLanguage</IRI>
+        <Literal>Relates a code interpreter to the programming language it can execute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#executesLanguage</IRI>
+        <Literal>execute Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#generatesLog</IRI>
+        <Literal>Relates a conversational AI platform to the interaction log it produces during use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#generatesLog</IRI>
+        <Literal>generates Log</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasContextWindow</IRI>
+        <Literal>The maximum number of tokens an autoregressive model can process in a single interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasContextWindow</IRI>
+        <Literal>has Context Window</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMemoryCapacity</IRI>
+        <Literal>The memory capacity available in a GPU cluster for model training and inference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMemoryCapacity</IRI>
+        <Literal>has Memory Capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMonthlyTokenLimit</IRI>
+        <Literal>The maximum number of tokens a free tier user can consume per month.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMonthlyTokenLimit</IRI>
+        <Literal>has Monthly Token Limit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasResolutionLimit</IRI>
+        <Literal>The maximum image resolution supported by an image generation capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasResolutionLimit</IRI>
+        <Literal>has Resolution Limit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAccessProvidedBy</IRI>
+        <Literal>Relates a conversational AI platform to the organization or infrastructure that provides access to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAccessProvidedBy</IRI>
+        <Literal>is Access Provided By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAccessedBy</IRI>
+        <Literal>Relates a real-time web index to the web search integration that accesses it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAccessedBy</IRI>
+        <Literal>is Accessed By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAuthorOf</IRI>
+        <Literal>Relates an AI research lab or organization to the creative work it authored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAuthorOf</IRI>
+        <Literal>is Author Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isBaseModelOf</IRI>
+        <Literal>Relates a large language model to the fine-tuned model that was derived from it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isBaseModelOf</IRI>
+        <Literal>is Base Model Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isBetaFeature</IRI>
+        <Literal>Indicates whether an AI capability is currently in beta testing and not fully released.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isBetaFeature</IRI>
+        <Literal>is Beta Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isExecutedBy</IRI>
+        <Literal>Relates a programming language to the code interpreter that executes it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isExecutedBy</IRI>
+        <Literal>is Executed By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFeatureOf</IRI>
+        <Literal>Relates an AI capability to the subscription tier that lists it as a feature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFeatureOf</IRI>
+        <Literal>is Feature Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFineTunedFrom</IRI>
+        <Literal>Relates a fine-tuned model to the base large language model it was derived from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFineTunedFrom</IRI>
+        <Literal>is Fined Tuned From</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLogGeneratedBy</IRI>
+        <Literal>Relates an interaction log to the conversational AI platform that generated it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isLogGeneratedBy</IRI>
+        <Literal>is Log Generated By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOperatingSystemOf</IRI>
+        <Literal>Relates a GPU cluster to the conversational AI platform it operates as infrastructure for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOperatingSystemOf</IRI>
+        <Literal>is Operating System Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPoweredBy</IRI>
+        <Literal>Relates an image generation capability to the diffusion or vision model that powers it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPoweredBy</IRI>
+        <Literal>is Powered By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProcessedBy</IRI>
+        <Literal>Relates a natural language input type to the large language model that processes it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isProcessedBy</IRI>
+        <Literal>is Processed By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProvidedBy</IRI>
+        <Literal>Relates infrastructure to the cloud provider that supplies it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isProvidedBy</IRI>
+        <Literal>is Provided By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRestrictedBy</IRI>
+        <Literal>Relates a platform feature to the premium tier that restricts access to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRestrictedBy</IRI>
+        <Literal>is Restricted By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isScrapedFrom</IRI>
+        <Literal>Indicates the web source from which a training dataset was collected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isScrapedFrom</IRI>
+        <Literal>is Scraped From</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSpecializationOf</IRI>
+        <Literal>Relates a domain or technology to the developer or capability that specializes in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSpecializationOf</IRI>
+        <Literal>is Specialization Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTargetedBy</IRI>
+        <Literal>Relates an audience to the subscription tier that targets them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTargetedBy</IRI>
+        <Literal>is Targeted By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTechnicallyAccessedBy</IRI>
+        <Literal>Relates API access to the software developer who requires it for technical use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTechnicallyAccessedBy</IRI>
+        <Literal>is Technically Accessed By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTrainedOn</IRI>
+        <Literal>Relates a large language model to the training dataset used to train it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTrainedOn</IRI>
+        <Literal>is Trained On</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isUsedForTrainingOf</IRI>
+        <Literal>Relates a training dataset to the large language model trained on it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isUsedForTrainingOf</IRI>
+        <Literal>is Used For Training Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isUtilizedBy</IRI>
+        <Literal>Relates a model to the AI capability or platform that utilizes it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isUtilizedBy</IRI>
+        <Literal>is Utilized By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isWrittenBy</IRI>
+        <Literal>Relates a programming language to the software developer who writes code in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isWrittenBy</IRI>
+        <Literal>is Written By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#powersVisuals</IRI>
+        <Literal>Relates a diffusion or vision model to the image generation capability it enables.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#powersVisuals</IRI>
+        <Literal>powers Visuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#processesInput</IRI>
+        <Literal>Relates a large language model to the type of input it processes, such as natural language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#processesInput</IRI>
+        <Literal>process Input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#providesAccess</IRI>
+        <Literal>Relates an organization or infrastructure to the AI platform it makes accessible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#providesAccess</IRI>
+        <Literal>provides Access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refreshRate</IRI>
+        <Literal>The frequency at which a real-time web index is updated with new content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#refreshRate</IRI>
+        <Literal>refresh Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requiresTechnicalAccess</IRI>
+        <Literal>Relates a software developer to the API access required to use an AI platform programmatically.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#requiresTechnicalAccess</IRI>
+        <Literal>requires Technical Access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#restrictsTo</IRI>
+        <Literal>Relates a premium tier to the platform features it restricts access to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#restrictsTo</IRI>
+        <Literal>restricts To</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#specializesIn</IRI>
+        <Literal>Relates a developer or capability to the specific domain or technology it focuses on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specializesIn</IRI>
+        <Literal>specialize In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#targetsAudience</IRI>
+        <Literal>Relates a subscription tier to the intended audience it is designed for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#targetsAudience</IRI>
+        <Literal>target Audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#utilizesModel</IRI>
+        <Literal>Relates an AI capability or platform to the model it uses to deliver its functions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#utilizesModel</IRI>
+        <Literal>utilizes Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#writesCodeIn</IRI>
+        <Literal>Relates a software developer to the programming language they use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#writesCodeIn</IRI>
+        <Literal>writes Code In</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#schema:ComputerLanguage</IRI>
+        <Literal>A formal language used to write instructions for computers, including programming and scripting languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#schema:ComputerLanguage</IRI>
+        <Literal>Computer Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#schema:Dataset</IRI>
+        <Literal>A structured collection of data used for training or evaluating AI models.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#schema:Dataset</IRI>
+        <Literal>Dataset</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
